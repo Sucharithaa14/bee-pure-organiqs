@@ -10,11 +10,14 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 import ProductDetail from './pages/ProductDetail'
+import ScrollToTop from './components/ScrollToTop'
+
 
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
