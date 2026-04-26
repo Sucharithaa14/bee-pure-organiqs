@@ -1,0 +1,95 @@
+const products = [
+  {
+    id: 1,
+    name: 'Jamun Honey',
+    img: '/images/JAMUN.png',
+    price: 449,
+    old: 549,
+    save: 18,
+    rating: 4.7,
+    reviews: 16,
+    category: 'floral',
+    badge: 'Sale 18%',
+    description: 'Rich, dark honey from Jamun flowers. Known for its low glycemic index and antidiabetic properties.'
+  },
+  {
+    id: 2,
+    name: 'Sidr Honey',
+    img: '/images/SIDR.png',
+    price: 499,
+    old: 599,
+    save: 17,
+    rating: 4.9,
+    reviews: 24,
+    category: 'floral',
+    badge: 'Sale 17%',
+    description: 'The ancient elixir from the sacred Sidr trees of Rajasthan. Premium quality, deeply nourishing.'
+  },
+  {
+    id: 3,
+    name: 'Tulsi Honey',
+    img: '/images/TULSI.png',
+    price: 449,
+    old: 549,
+    save: 18,
+    rating: 4.8,
+    reviews: 28,
+    category: 'herb',
+    badge: 'Bestseller',
+    description: 'Sweet sweetness with tulsi leaves. Boosts immunity and soothes cough naturally.'
+  },
+  {
+    id: 4,
+    name: 'Wild Forest Honey',
+    img: '/images/WILDFOREST.png',
+    price: 399,
+    old: 499,
+    save: 20,
+    rating: 4.9,
+    reviews: 22,
+    category: 'forest',
+    badge: 'Sale 20%',
+    description: 'Mystical and deep from the untouched forests of India. Raw, wild, and full of life.'
+  },
+  {
+    id: 5,
+    name: 'Ajwain Honey',
+    img: '/images/AJWAIN.png',
+    price: 449,
+    old: 549,
+    save: 18,
+    rating: 4.6,
+    reviews: 16,
+    category: 'herb',
+    badge: 'Sale 18%',
+    description: 'Aromatic and healing from the Ajwain fields of Royal Chittorgarh. Great for digestion.'
+  },
+  {
+    id: 6,
+    name: 'Himalayan Multi Flora',
+    img: '/images/HIMALAYA.png',
+    price: 399,
+    old: 499,
+    save: 20,
+    rating: 4.7,
+    reviews: 13,
+    category: 'floral',
+    badge: 'Sale 20%',
+    description: 'A wildflower symphony from the Himalayan slopes of Nagrete. Fresh and fragrant.'
+  },
+  {
+    id: 7,
+    name: 'Litchi Honey',
+    img: '/images/LITCHI.png',
+    price: 449,
+    old: 549,
+    save: 18,
+    rating: 4.8,
+    reviews: 14,
+    category: 'floral',
+    badge: 'New',
+    description: 'Sweet hints of summer from Litchi orchards of Bihar. Light, floral and delicious.'
+  },
+]
+
+export default products
