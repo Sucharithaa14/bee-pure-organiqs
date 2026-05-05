@@ -17,6 +17,8 @@ import ReturnRefund from './pages/policies/ReturnRefund'
 import PrivacyPolicy from './pages/policies/PrivacyPolicy'
 import PaymentPolicy from './pages/policies/PaymentPolicy'
 import CancellationPolicy from './pages/policies/CancellationPolicy'
+import Auth from './pages/Auth'
+
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/payment-policy" element={<PaymentPolicy />} />
         <Route path="/cancellation-policy" element={<CancellationPolicy />} />
+        <Route path="/login" element={<Auth />} />
+        <Route path="/signup" element={<Auth />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
