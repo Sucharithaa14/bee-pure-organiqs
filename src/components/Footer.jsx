@@ -43,11 +43,10 @@ export default function Footer() {
           <div>
             <h4 className="font-serif font-bold text-white mb-5 text-sm tracking-wide">About</h4>
             <ul className="flex flex-col gap-3">
-              {['About Us', 'Contact Us', 'Terms & Conditions', "FAQ's"].map(item => (
-                <li key={item}>
-                  <a href="#" className="text-sm text-white/40 hover:text-[#F5C842] transition-colors">{item}</a>
-                </li>
-              ))}
+              <li><Link to="/about" className="text-sm text-white/40 hover:text-[#F5C842] transition-colors">About Us</Link></li>
+<li><Link to="/contact" className="text-sm text-white/40 hover:text-[#F5C842] transition-colors">Contact Us</Link></li>
+<li><Link to="/terms" className="text-sm text-white/40 hover:text-[#F5C842] transition-colors">Terms & Conditions</Link></li>
+<li><Link to="/faq" className="text-sm text-white/40 hover:text-[#F5C842] transition-colors">FAQ's</Link></li>
             </ul>
           </div>
 
@@ -55,11 +54,11 @@ export default function Footer() {
           <div>
             <h4 className="font-serif font-bold text-white mb-5 text-sm tracking-wide">Policies</h4>
             <ul className="flex flex-col gap-3">
-              {['Shipping Policy', 'Returns & Refund', 'Privacy Policy', 'Cancellation Policy'].map(item => (
-                <li key={item}>
-                  <a href="#" className="text-sm text-white/40 hover:text-[#F5C842] transition-colors">{item}</a>
-                </li>
-              ))}
+              <li><Link to="/shipping-policy" className="text-sm text-white/40 hover:text-[#F5C842] transition-colors">Shipping Policy</Link></li>
+<li><Link to="/returns" className="text-sm text-white/40 hover:text-[#F5C842] transition-colors">Returns & Refund</Link></li>
+<li><Link to="/privacy-policy" className="text-sm text-white/40 hover:text-[#F5C842] transition-colors">Privacy Policy</Link></li>
+<li><Link to="/payment-policy" className="text-sm text-white/40 hover:text-[#F5C842] transition-colors">Payment Policy</Link></li>
+<li><Link to="/cancellation-policy" className="text-sm text-white/40 hover:text-[#F5C842] transition-colors">Cancellation Policy</Link></li>
             </ul>
           </div>
 

@@ -10,14 +10,17 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 import ProductDetail from './pages/ProductDetail'
-import ScrollToTop from './components/ScrollToTop'
-
-
+import FAQ from './pages/FAQ'
+import TermsConditions from './pages/policies/TermsConditions'
+import ShippingPolicy from './pages/policies/ShippingPolicy'
+import ReturnRefund from './pages/policies/ReturnRefund'
+import PrivacyPolicy from './pages/policies/PrivacyPolicy'
+import PaymentPolicy from './pages/policies/PaymentPolicy'
+import CancellationPolicy from './pages/policies/CancellationPolicy'
 
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,8 +30,15 @@ function App() {
         <Route path="/order-success" element={<OrderSuccess />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
         <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/terms" element={<TermsConditions />} />
+        <Route path="/shipping-policy" element={<ShippingPolicy />} />
+        <Route path="/returns" element={<ReturnRefund />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/payment-policy" element={<PaymentPolicy />} />
+        <Route path="/cancellation-policy" element={<CancellationPolicy />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>

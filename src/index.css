@@ -126,3 +126,43 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+.prose-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #1A1208;
+  font-size: 1.1rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+.prose-content p {
+  color: #4A3520;
+  opacity: 0.75;
+  font-size: 0.9rem;
+  line-height: 1.85;
+  margin-bottom: 0.8rem;
+}
+.prose-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.8rem;
+}
+.prose-content ul li {
+  color: #4A3520;
+  opacity: 0.75;
+  font-size: 0.9rem;
+  line-height: 1.85;
+  padding-left: 1.2rem;
+  position: relative;
+  margin-bottom: 0.3rem;
+}
+.prose-content ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #E8900A;
+  font-size: 0.8rem;
+}
+.prose-content strong {
+  color: #1A1208;
+  font-weight: 600;
+}
