@@ -1,12 +1,16 @@
+import { useState, useEffect } from 'react'
+import SearchBar from './SearchBar'
 import { Link, useLocation } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
-import { useState, useEffect } from 'react'
+
 
 export default function Navbar() {
   const { totalItems } = useCart()
+  const [searchOpen, setSearchOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
+  
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 30)
@@ -58,6 +62,12 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
+        <button onClick={() => setSearchOpen(true)}
+          className="hidden md:flex items-center text-[#3D2B0F]/70 hover:text-[#1A1208] transition-colors">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </button>
         <Link to="/login"className="hidden md:flex items-center gap-1.5 text-sm font-medium text-[#3D2B0F]/70 hover:text-[#1A1208] transition-colors">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -103,6 +113,8 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
+      {searchOpen && <SearchBar onClose={() => setSearchOpen(false)} />}
+
     </>
   )
 }
