@@ -18,6 +18,7 @@ import PrivacyPolicy from './pages/policies/PrivacyPolicy'
 import PaymentPolicy from './pages/policies/PaymentPolicy'
 import CancellationPolicy from './pages/policies/CancellationPolicy'
 import Auth from './pages/Auth'
+import TrackOrder from './pages/TrackOrder'
 
 
 function App() {
@@ -43,6 +44,8 @@ function App() {
         <Route path="/login" element={<Auth />} />
         <Route path="/signup" element={<Auth />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/track-order" element={<TrackOrder />} />
+
       </Routes>
       <Footer />
     </BrowserRouter>
